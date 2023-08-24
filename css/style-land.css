@@ -8,7 +8,7 @@
 html{
   font-family: 'Dancing Script', cursive;
   }
-  section{
+  article{
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -19,6 +19,7 @@ html{
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../img/pattern.jpg);
     background-size: cover;
     background-position: center;
+   
   }
  header{
   position: absolute;
@@ -31,34 +32,28 @@ html{
   align-items: center;
  }
 
- nav{
-      display: flex;
-      padding: 2em;
-      justify-content: space-between;
-      align-items: center;
- }
- .links{
-    flex: 1;
-    text-align: right;
+
+ .links ul{
+  position: relative;
+  display: flex;
+  text-align: right;
  }
  .links ul li{
     list-style-type: none;
-    display:inline-block;
-    padding: 8px 12px;
-    position: relative;
  }
  .links ul li a{
+  display: inline-block;
   color: azure;
   text-decoration: none;
+  font-weight: 400;
   font-size: 20px;
   border-bottom: 1px solid salmon;
+  margin-left: 40px;
  }
 
  .links ul li a:hover{
   border-bottom: 1px solid aqua;
-
  }
-
  .text-box{
   width: 90%;
   color:azure;
@@ -81,27 +76,57 @@ html{
   font-family: 'Times New Roman', Times, serif;
   font-weight: 300;
  }
- 
- .content{
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-   }
-   .text-box{
-     flex-basis: 48%;
-     padding: 30px 2px;
-   }
-   .text-box img{
-    margin-left: 700px;
-    width: 35%;
-    height: 60%;
-   }
 .content .text-box span{
   color: aqua;
   font-size: 20px;
-  font-weight:400;
+  font-weight:600;
 }
-   .button{
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin-left: 600px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.mySlides img{
+  width: 250px;
+  height: 400px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.button{
     display: inline-block;
     text-decoration: none;
     color:white;
@@ -112,47 +137,9 @@ html{
     position: relative;
     cursor: pointer;
     align-items: center;
-    
-  
    }
-   .button:hover{
+.button:hover{
    border: 1px solid salmon;
    background-color: salmon;
    transition: 1s;
    }
-/* Making it responsive */
-@media(max-width:600px){
-
-  .links ul li{
-    display: flex;
-    flex: 1;
-    justify-content:center;}
-  }
-.h1{
-  font-size: 30px;
-}
-  .content{
-     flex-direction: column;
-    }
-    /*Footer
-    .footer{
-     width: 100%;
-     text-align: center;
-     padding: 30px 0;
-    }
-   .footer h3{
-     font-size: 25px;
-     margin-bottom: 25px;
-     margin-top: 20px;
-     font-weight: 600;
-   }
-   .footer p{
-     font-size: 15px;
-     font-family: 'Times New Roman', Times, serif;
-     padding-bottom: 20px;
-    }
-    .social-icon{
-       padding-top: 20px;
-       margin: 0 15px;
-       cursor: pointer;
-     }*/
