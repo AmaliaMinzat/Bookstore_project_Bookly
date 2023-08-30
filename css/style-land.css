@@ -143,3 +143,26 @@ html{
    background-color: salmon;
    transition: 1s;
    }
+
+   @media(max-width:700px){
+     .links ul li a{
+        display: flex;
+        flex: 1;
+        justify-content:center;}
+     }
+     .content h2{
+      font-size: 30px;
+     }
+     .content p{
+      font-size: 20px;
+    }
+   
+     @media(max-width:700px){
+     
+      .mySlides{
+        width: 200px;
+        height: 300px;
+        flex-direction: column;
+      }
+      
+      }
