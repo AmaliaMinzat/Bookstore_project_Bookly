@@ -147,17 +147,18 @@ span{
  color: aliceblue;
  transition: 1s;
  }
- @media(max-width:700px){
+ @media(max-width:600px){
   header h1{
     font-size: 30px;
    }
    .links ul li{
       display: flex;
       flex: 1;
-      justify-content: center;}
+      column-count: 1;
+      }
    }
  
-   @media(max-width:700px){
+   @media(max-width:600px){
     .embed p{
       font-size: 30px;
     }
