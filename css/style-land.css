@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  font-family: 'Dancing Script', cursive;
+}
+
+article {
+  position: relative;
+  width: 100%;
+  padding: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../img/pattern.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  padding: 3em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links {
+  flex: 1;
+  text-align: right;
+}
+
+.links ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 5px 12px;
+  position: relative;
+}
+
+.links ul li a {
+  color: azure;
+  text-decoration: none;
+  font-size: 23px;
+  border-bottom: 1px solid salmon;
+}
+
+.links ul li a:hover {
+  border-bottom: 1px solid aqua;
+}
+
+.col-left {
+  max-width: 70%;
+}
+@media screen and (max-width:700px) {
+  .col-left {
+    width: 100%;
+  }
+  .col-right {
+    width: 100%;
+    padding-bottom: 100px;
+  }
+  .content {
+    margin-top: 225px;
+  }
+  article{
+    padding:0px;
+  }
+}
+
+.col-right {
+  max-width: 30%;
+  min-width: 254px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
+.text-box {
+  /*width: 90%;*/
+  color: azure;
+  /*position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);*/
+  text-align: center;
+  margin-right: auto;
+}
+
+.text-box h2 {
+  font-size: 40px;
+  text-align: left;
+  margin: 30px 0 40px;
+  padding-top: 20px;
+}
+
+.text-box p {
+  margin: 30px 0 40px;
+  font-size: 20px;
+  text-align: left;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 300;
+}
+
+.text-box span {
+  color: aqua;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100vw;
+  position: relative;
+  margin-top: 5%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  vertical-align: middle;
+  width: 100%;
+  height: 400px;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  margin-top: auto;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.text {
+  color: azure;
+  font-size: 15px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 300px) {
+
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 12px 34px;
+  font-size: 17px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  align-items: center;
+}
+
+.button:hover {
+  border: 1px solid salmon;
+  background-color: salmon;
+  transition: 1s;
+}
+
+@media(max-width:700px) {
+  .links ul li {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+  }
+
+  .links ul li a {
+    font-size: 20px;
+  }
+}
+
+@media(max-width:700px) {
+  .text-box {
+    flex-direction: column;
+
+  }
+
+  .text-box h2 {
+    font-size: 20px;
+
+  }
+
+  .text-box p {
+    font-size: 12px;
+
+  }
+}
+
+@media (max-width: 700px) {
+  .mySlides img {
+    max-width: 100%;
+    height: auto;
+  }
+}

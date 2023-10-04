@@ -1,88 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Bookstore</title>
-    <link rel="stylesheet" href="css/style-ct.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
- 
-  </head>
-  <body>
-    <header>
-      <nav>
-        
-          <div class="links">
-              <ul>
-                <li><a href="bookstore.html">Home</a></li>
-                <li><a href="about.html">About us</a></li>
-                <li><a href="explore.html">Explore books</a></li>
-                <li><a href="contact.html">Contact page</a></li>
-              </ul>
-          </div>
-      </nav>
-      <h1>Contact us!</h1>
-    </header>
-    <!--Contact page section-->
-    
-    <section class="embed">
-      <p>Find us here!</p>
-      <div class="maps">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d356077.06099665794!2d23.56452232132905!3d45.79419191325507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474c67839cb43593%3A0xc125fd3ea1bd0262!2sLibr%C4%83ria%20Humanitas%20Constantin%20Noica!5e0!3m2!1sen!2sro!4v1685991675467!5m2!1sen!2sro"
-       width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bookstore</title>
+  <link rel="stylesheet" href="css/style-ct.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <nav>
+
+      <div class="links">
+        <ul>
+          <li><a href="bookstore.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="explore.html">Explore books</a></li>
+          <li><a href="contact.html">Contact page</a></li>
+        </ul>
+      </div>
+    </nav>
+    <h1>Contact us!</h1>
+  </header>
+  <!--Contact page section-->
+
+  <section class="embed">
+    <p>Find us here!</p>
+    <div class="maps">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d356077.06099665794!2d23.56452232132905!3d45.79419191325507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474c67839cb43593%3A0xc125fd3ea1bd0262!2sLibr%C4%83ria%20Humanitas%20Constantin%20Noica!5e0!3m2!1sen!2sro!4v1685991675467!5m2!1sen!2sro"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+  <section class="contact-us">
+
+    <div class="row">
+      <div class="contact-1">
+        <div>
+          <img class="icon" width="64" height="64" src="https://img.icons8.com/dusk/64/home--v1.png" alt="home--v1" />
+          <span>
+            <p>Str. Nicolae Bălcescu <br>16, Sibiu</p>
+          </span>
+        </div>
+        <div>
+          <img class="icon" width="64" height="64" src="https://img.icons8.com/dusk/64/phone.png" alt="phone" />
+          <span>
+            <p>+40746574838</p>
+          </span>
+        </div>
+        <div>
+          <img class="icon" width="64" height="64" src="https://img.icons8.com/dusk/64/filled-message.png"
+            alt="filled-message" />
+          <span>
+            <p>bookly-co@gmail.com</p>
+          </span>
+        </div>
+      </div>
+      <div class="contact-2">
+        <h3>Enter your information bellow</h3>
+        <form name="myForm" action="" onsubmit="validateForm(event)" method="post">
+          <input type="text" name="fname" placeholder="Enter your first name">
+          <div id="fname-error" style="display:none">First name is required</div>
+          <input type="text" name="lname" placeholder="Enter your last name">
+          <div id="lname-error" style="display:none">Last name is required</div>
+          <input type="text" name="mail" placeholder="Enter your email adress">
+          <div id="email-error" style="display:none">Email adress is required</div>
+          <input type="text" name="subject" placeholder="Enter your subject">
+          <div id="subj-error" style="display:none">Subject is required</div>
+          <textarea rows="10" name="message" placeholder="Message"></textarea>
+          <div id="msg-error" style="display:none">Message is required</div>
+          <button type="submit" class="button">Send message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <section class="footer">
+      <h3>Follow Us</h3>
+      <p>If you want be part of our community, follow us on your favourite social media platform.</p>
+      <div class="social-icon">
+        <a href="https://www.facebook.com/humanitassibiu" target="_blank"><img width="48" height="48"
+            src="https://img.icons8.com/fluency/48/facebook-new.png" alt="facebook-new" /></a>
+        <a href="#"><img width="48" height="48" src="https://img.icons8.com/color/48/twitter--v1.png"
+            alt="twitter--v1" /></a>
+        <a href="#"><img width="48" height="48" src="https://img.icons8.com/color/48/instagram-new--v1.png"
+            alt="instagram-new--v1" /></a>
+        <a href="#"><img width="48" height="48" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin" /></a>
       </div>
     </section>
-    <section class="contact-us">
-
-        <div class="row">
-           <div class="contact-1"> 
-              <div>
-                <img class="icon" width="64" height="64" src="https://img.icons8.com/dusk/64/home--v1.png" alt="home--v1"/>
-                  <span>
-                    <p>Str. Nicolae Bălcescu <br>16, Sibiu</p>
-                  </span>
-              </div>
-              <div>
-                <img class="icon" width="64" height="64" src="https://img.icons8.com/dusk/64/phone.png" alt="phone"/>
-                  <span>
-                    <p>+40746574838</p>
-                  </span>
-              </div>
-              <div>
-                <img class="icon" width="64" height="64" src="https://img.icons8.com/dusk/64/filled-message.png" alt="filled-message"/>
-                  <span>
-                    <p>bookly-co@gmail.com</p>
-                  </span>
-              </div>
-            </div>
-            <div class="contact-2">
-              <h3>Enter your information bellow</h3>
-                <form action="">
-                    <input type="text" placeholder="First name" required>
-                    <input type="text" placeholder="Last name" required>
-                    <input type="email" placeholder="Enter your email adress" required>
-                    <input type="text" placeholder="Enter your subject" required>
-                    <textarea rows="10" placeholder="Message" required></textarea>
-                    <button type="submit" class="button">Send message</button>
-                </form>
-            </div>
-        </div>
-    </section>
-    
-     
-   <footer>
-      <section class="footer">
-          <h3>Follow Us</h3>
-          <p>If you want be part of our community, follow us on your favourite social media platform.</p>
-          <div class="social-icon">
-            <a href="https://www.facebook.com/humanitassibiu" target="_blank"><img width="48" height="48" src="https://img.icons8.com/fluency/48/facebook-new.png" alt="facebook-new"/></a>
-            <a href="#"><img width="48" height="48" src="https://img.icons8.com/color/48/twitter--v1.png" alt="twitter--v1"/></a>
-            <a href="#"><img width="48" height="48" src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="instagram-new--v1"/></a>
-            <a href="#"><img width="48" height="48" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin"/></a>
-          </div>
-      </section>
-   </footer>
-  
-  </body>
+  </footer>
+  <script src="js/contact.js"></script>
+</body>
